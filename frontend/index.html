@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Library Management System</h1>
+
+  <h2>Add Author</h2>
+  <form id="authorForm">
+    <label for="authorName">Name:</label>
+    <input type="text" id="authorName" required>
+    <label for="authorEmail">Email:</label>
+    <input type="email" id="authorEmail" required>
+    <label for="authorPhone">Phone:</label>
+    <input type="text" id="authorPhone" required>
+    <button type="submit">Add Author</button>
+  </form>
+
+  <h2>Add Book</h2>
+  <form id="bookForm">
+    <label for="bookTitle">Title:</label>
+    <input type="text" id="bookTitle" required>
+    <label for="bookAuthor">Author ID:</label>
+    <input type="text" id="bookAuthor" required>
+    <label for="bookISBN">ISBN:</label>
+    <input type="text" id="bookISBN" required>
+    <label for="bookGenre">Genre:</label>
+    <input type="text" id="bookGenre" required>
+    <label for="bookCopies">Available Copies:</label>
+    <input type="number" id="bookCopies" required>
+    <button type="submit">Add Book</button>
+  </form>
+
+  <h2>Add Borrower</h2>
+  <form id="borrowerForm">
+    <label for="borrowerName">Name:</label>
+    <input type="text" id="borrowerName" required>
+    <label for="borrowerEmail">Email:</label>
+    <input type="email" id="borrowerEmail" required>
+    <label for="borrowerPhone">Phone:</label>
+    <input type="text" id="borrowerPhone" required>
+    <button type="submit">Add Borrower</button>
+  </form>
+
+  <h2>Books List</h2>
+  <ul id="booksList"></ul>
+
+  <script src="app.js"></script>
+</body>
+</html>
